@@ -1,0 +1,569 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="iso-8859-2">
+<title>Reconocimientos</title>
+<link rel="stylesheet" href="css/estilos.css">
+
+	<!-- FUNCION MOSTRAR OCULTRAR FILTROS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn-mostrar-filtros").click(function(){
+    $("#columna-filtros").toggleClass("mostrar");
+	$("#btn-mostrar-filtros").toggleClass("mostrar-cerrar");
+  });
+});
+</script>
+	<!-- FUNCION MOSTRAR OCULTRAR FILTROS -->
+	
+</head>
+
+<body>
+<div id="wrapper">
+	
+	<!-- BOTON MOSTRAR OCULTAR FILTROS MOBILE -->
+  <div id="btn-mostrar-filtros"></div>
+	<!-- BOTON MOSTRAR OCULTAR FILTROS MOBILE -->
+	
+	<!-- COLUMNA IZQUIERDA DE FILTROS -->
+  <div id="columna-filtros">
+    <form action="">
+		
+		<!-- FILTROS PUBLICACION -->
+      <div class="cont-selector publicaciones">
+        <h4>Publicación</h4>
+        <div class="buscador buscador-publicacion">
+          <input placeholder="Buscar..." type="text" name="buscador-publicacion" id="buscador-publicacion">
+        </div>
+        <div class="selectores">
+          <label>
+            <input type="checkbox" name="decanter-magazine" value="decanter-magazine">
+            Decanter Magazine </label>
+          <label>
+            <input type="checkbox" name="wine-enthusiast" value="wine-enthusiast" >
+            Wine Enthusiast </label>
+          <label>
+            <input type="checkbox" name="vinous" value="vinous">
+            Vinous </label>
+          <label>
+            <input type="checkbox" name="winespirits" value="winespirits">
+            WINE&amp;SPIRITS </label>
+          <label>
+            <input type="checkbox" name="robert-parker" value="robert-parker">
+            Robert Parker </label>
+          <label>
+            <input type="checkbox" name="wine-spectator" value="wine-spectator">
+            Wine Spectator </label>
+          <label>
+            <input type="checkbox" name="james-suckling" value="james-suckling">
+            James Suckling </label>
+          <label>
+            <input type="checkbox" name="tim-atkin" value="tim-atkin">
+            Gran Reserva </label>
+          <label>
+            <input type="checkbox" name="descorchados" value="descorchados">
+            Descorchados </label>
+          <label>
+            <input type="checkbox" name="mesa-de-cata-la-cav" value="mesa-de-cata-la-cav">
+            Mesa de Cata - La Cav </label>
+          <label>
+            <input type="checkbox" name="decanter-world-wine-awards" value="decanter-world-wine-awards">
+            Decanter World Wine Awards </label>
+        </div>
+      </div>
+		<!-- FILTROS PUBLICACION -->
+		
+		<!-- FILTROS VINOS -->
+      <div class="cont-selector Vino">
+        <h4>Vino</h4>
+        <div class="buscador buscador-vino">
+          <input placeholder="Buscar..." type="text" name="buscador-vino" id="buscador-vino">
+        </div>
+        <div class="selectores">
+          <label>
+            <input type="checkbox" name="talinay" value="talinay">
+            TALINAY </label>
+          <label>
+            <input type="checkbox" name="talinay-pai" value="talinay-pai" >
+            TALINAY PAI </label>
+          <label>
+            <input type="checkbox" name="talinay-litico" value="talinay-litico">
+            TALINAY LÍTICO </label>
+          <label>
+            <input type="checkbox" name="roca-madre" value="roca-madre">
+            ROCA MADRE </label>
+          <label>
+            <input type="checkbox" name="dom" value="dom">
+            DOM </label>
+          <label>
+            <input type="checkbox" name="payen" value="payen">
+            PAYEN </label>
+          <label>
+            <input type="checkbox" name="talinay-caliza" value="talinay-caliza">
+            TALINAY CALIZA </label>
+          <label>
+            <input type="checkbox" name="transversal" value="transversal">
+            TRANSVERSAL </label>
+          <label>
+            <input type="checkbox" name="barranco" value="barranco">
+            BARRANCO </label>
+          <label>
+            <input type="checkbox" name="talud" value="talud">
+            TALUD </label>
+          <label>
+            <input type="checkbox" name="micas" value="micas">
+            MICAS </label>
+          <label>
+            <input type="checkbox" name="vetas-blancas" value="vetas-blancas">
+            VETAS BLANCAS </label>
+          <label>
+            <input type="checkbox" name="pedregoso" value="pedregoso">
+            PEDREGOSO </label>
+        </div>
+      </div>
+		<!-- FILTROS VINOS -->
+		
+		<!-- FILTROS VARIEDAD -->
+      <div class="cont-selector Vino">
+        <h4>Variedad</h4>
+        <div class="buscador buscador-variedad">
+          <input placeholder="Buscar..." type="text" name="buscador-variedad" id="buscador-variedad">
+        </div>
+        <div class="selectores">
+          <label>
+            <input type="checkbox" name="sauvignon blanc" value="sauvignon blanc">
+            SAUVIGNON BLANC </label>
+          <label>
+            <input type="checkbox" name="pinot-noir" value="pinot-noir" >
+            PINOT NOIR </label>
+          <label>
+            <input type="checkbox" name="malbec" value="malbec">
+            MALBEC </label>
+          <label>
+            <input type="checkbox" name="cabernet-sauvignon" value="cabernet-sauvignon">
+            CABERNET SAUVIGNON </label>
+          <label>
+            <input type="checkbox" name="syrah-cabernet-franc" value="syrah-cabernet-franc">
+            SYRAH - CABERNET FRANC </label>
+          <label>
+            <input type="checkbox" name="chardonnay" value="chardonnay">
+            CHARDONNAY </label>
+          <label>
+            <input type="checkbox" name="red-blend" value="red-blend">
+            RED BLEND </label>
+          <label>
+            <input type="checkbox" name="viognier" value="viognier">
+            VIOGNIER </label>
+          <label>
+            <input type="checkbox" name="carmenere" value="carmenere">
+            CARMENERE </label>
+          <label>
+            <input type="checkbox" name="syrah" value="syrah">
+            SYRAH </label>
+          <label>
+            <input type="checkbox" name="cabernet-franc" value="cabernet-franc">
+            CABERNET FRANC </label>
+          <label>
+            <input type="checkbox" name="malbec-cabernet-franc" value="malbec-cabernet-franc">
+            MALBEC-CABERNET FRANC </label>
+          <label>
+            <input type="checkbox" name="syrah-carmenere" value="syrah-carmenere">
+            SYRAH-CARMENERE </label>
+          <label>
+            <input type="checkbox" name="merlot" value="merlot">
+            MERLOT </label>
+          <label>
+            <input type="checkbox" name="rose" value="rose">
+            ROSÉ </label>
+        </div>
+      </div>
+		<!-- FILTROS VARIEDAD -->
+		
+		<!-- FILTROS COSECHA -->
+      <div class="cont-selector Vino">
+        <h4>Cosecha</h4>
+        <div class="buscador buscador-cosecha">
+          <input placeholder="Buscar..." type="text" name="buscador-cosecha" id="buscador-cosecha">
+        </div>
+        <div class="selectores">
+          <label>
+            <input type="checkbox" name="2007" value="2007">
+            2007 </label>
+          <label>
+            <input type="checkbox" name="2008" value="2008" >
+            2008 </label>
+          <label>
+            <input type="checkbox" name="2009" value="2009">
+            2009 </label>
+          <label>
+            <input type="checkbox" name="2010" value="2010">
+            2010 </label>
+          <label>
+            <input type="checkbox" name="2011" value="2011">
+            2011 </label>
+          <label>
+            <input type="checkbox" name="2012" value="2012">
+            2012 </label>
+          <label>
+            <input type="checkbox" name="2013" value="2013">
+            2013 </label>
+          <label>
+            <input type="checkbox" name="2014" value="2014">
+            2014 </label>
+          <label>
+            <input type="checkbox" name="2015" value="2015">
+            2015 </label>
+          <label>
+            <input type="checkbox" name="2016" value="2016">
+            2016 </label>
+          <label>
+            <input type="checkbox" name="2017" value="2017">
+            2017 </label>
+          <label>
+            <input type="checkbox" name="2018" value="2018">
+            2018 </label>
+          <label>
+            <input type="checkbox" name="2019" value="2019">
+            2019 </label>
+          <label>
+            <input type="checkbox" name="2020" value="2020">
+            2020 </label>
+          <label>
+            <input type="checkbox" name="2021" value="2021">
+            2021 </label>
+          <label>
+            <input type="checkbox" name="2022" value="2022">
+            2022 </label>
+          <label>
+            <input type="checkbox" name="2023" value="2023">
+            2023 </label>
+        </div>
+      </div>
+		<!-- FILTROS COSECHA -->
+		
+		<!-- FILTROS PREMIOS PUNTAJES -->
+      <div class="cont-selector Vino">
+        <h4>Premio/Puntaje</h4>
+        <div class="buscador buscador-premio-puntaje">
+          <input placeholder="Buscar..." type="text" name="buscador-premio-puntaje" id="buscador-premio-puntaje">
+        </div>
+        <div class="selectores">
+          <label>
+            <input type="checkbox" name="89" value="89">
+            89 </label>
+          <label>
+            <input type="checkbox" name="90" value="90" >
+            90 </label>
+          <label>
+            <input type="checkbox" name="91" value="91">
+            91 </label>
+          <label>
+            <input type="checkbox" name="92" value="92">
+            92 </label>
+          <label>
+            <input type="checkbox" name="93" value="93">
+            93 </label>
+          <label>
+            <input type="checkbox" name="94" value="94">
+            94 </label>
+          <label>
+            <input type="checkbox" name="95" value="95">
+            95 </label>
+          <label>
+            <input type="checkbox" name="96" value="96">
+            96 </label>
+          <label>
+            <input type="checkbox" name="97" value="97">
+            97 </label>
+          <label>
+            <input type="checkbox" name="98" value="98">
+            98 </label>
+          <label>
+            <input type="checkbox" name="99" value="99">
+            99 </label>
+          <label>
+            <input type="checkbox" name="89mas" value="89mas">
+            89+ </label>
+          <label>
+            <input type="checkbox" name="90mas" value="90mas">
+            90+ </label>
+          <label>
+            <input type="checkbox" name="91mas" value="91mas">
+            91+ </label>
+          <label>
+            <input type="checkbox" name="92mas" value="92mas">
+            92+ </label>
+          <label>
+            <input type="checkbox" name="93mas" value="93mas">
+            93+ </label>
+          <label>
+            <input type="checkbox" name="94mas" value="94mas">
+            94+ </label>
+          <label>
+            <input type="checkbox" name="95mas" value="95mas">
+            95+ </label>
+          <label>
+            <input type="checkbox" name="best-buy" value="best-buy">
+            BEST BUY </label>
+          <label>
+            <input type="checkbox" name="enologo-del-anio" value="enologo-del-anio">
+            ENÓLOGO DEL ANO / WINEMAKER OF THE YEAR </label>
+          <label>
+            <input type="checkbox" name="highly-recommended" value="highly-recommended">
+            HIGHLY RECOMMENDED </label>
+          <label>
+            <input type="checkbox" name="medalla-de-oro" value="medalla-de-oro">
+            MEDALLA DE ORO / GOLD MEDAL </label>
+          <label>
+            <input type="checkbox" name="medalla-de-plata" value="medalla-de-plata">
+            MEDALLA DE PLATA / SILVER MEDAL </label>
+          <label>
+            <input type="checkbox" name="mejor-cabernet-franc" value="mejor-cabernet-franc">
+            MEJOR CABERNET FRANC / BEST CABERNET FRANC </label>
+          <label>
+            <input type="checkbox" name="mejor-cabernet-sauvignon" value="mejor-cabernet-sauvignon">
+            MEJOR CABERNET SAUVIGNON / BEST CABERNET SAUVIGNON </label>
+          <label>
+            <input type="checkbox" name="mejor-chardonnay" value="mejor-chardonnay">
+            MEJOR CHARDONNAY / BEST CHARDONNAY </label>
+          <label>
+            <input type="checkbox" name="mejor-malbec" value="mejor-malbec">
+            MEJOR MALBEC / BEST MALBEC </label>
+          <label>
+            <input type="checkbox" name="mejor-pinot-noir" value="mejor-pinot-noir">
+            MEJOR PINOT NOIR / BEST PINOT NOIR </label>
+          <label>
+            <input type="checkbox" name="mejor-pinot-noir-de-sudamerica" value="mejor-pinot-noir-de-sudamerica">
+            MEJOR PINOT NOIR DE SUDAMÉRICA / BEST PINOT NOIR OF SOUTH AMERICA </label>
+          <label>
+            <input type="checkbox" name="mejor-puntaje-categoria-malbec" value="mejor-puntaje-categoria-malbec">
+            MEJOR PUNTAJE CATEGORÍA MALBEC / BEST SCORE CHILEAN MALBEC CATEGORY </label>
+          <label>
+            <input type="checkbox" name="mejor-puntaje-categoria-sauvignon" value="mejor-puntaje-categoria-sauvignon">
+            MEJOR PUNTAJE CATEGORÍA SAUVIGNON BLANC / BEST SCORE CHILEAN SAUVIGNON BLANC SCORE </label>
+          <label>
+            <input type="checkbox" name="mejor-sauvignon-blanc" value="mejor-sauvignon-blanc">
+            MEJOR SAUVIGNON BLANC / BEST SAUVIGNON BLANC </label>
+          <label>
+            <input type="checkbox" name="mejor-syrah" value="mejor-syrah">
+            MEJOR SYRAH / BEST SYRAH </label>
+          <label>
+            <input type="checkbox" name="mejor-vino-blanco" value="mejor-vino-blanco">
+            MEJOR VINO BLANCO / BEST WHITE WINE </label>
+          <label>
+            <input type="checkbox" name="mejor-vino-del-ano" value="mejor-vino-del-ano">
+            MEJOR VINO DEL ANO / BEST WINE OF THE YEAR </label>
+          <label>
+            <input type="checkbox" name="mejor-vino-tinto-del-anio" value="mejor-vino-tinto-del-anio">
+            MEJOR VINO TINTO DEL ANO / BEST RED WINE OF THE YEAR </label>
+          <label>
+            <input type="checkbox" name="super-precio-rose" value="super-precio-rose">
+            SUPER PRECIO ROSÉ / BEST VALUE ROSÉ </label>
+          <label>
+            <input type="checkbox" name="top-100-best-wines-of-the-year" value="top-100-best-wines-of-the-year">
+            TOP 100 BEST WINES OF THE YEAR </label>
+          <label>
+            <input type="checkbox" name="top-100-values-of-the year" value="top-100-values-of-the year">
+            TOP 100 VALUES OF THE YEAR </label>
+          <label>
+            <input type="checkbox" name="top-100-wine-discoveries-2020" value="top-100-wine-discoveries-2020">
+            TOP 100 WINE DISCOVERIES 2020 </label>
+          <label>
+            <input type="checkbox" name="top-100-wines-of-the-world" value="top-100-wines-of-the-world">
+            TOP 100 WINES OF THE WORLD </label>
+          <label>
+            <input type="checkbox" name="top-50-wines-of-the-year" value="top-50-wines-of-the-year">
+            TOP 50 WINES OF THE YEAR </label>
+          <label>
+            <input type="checkbox" name="vino-revelacion" value="vino-revelacion">
+            VINO REVELACIÓN / REVELATION WINE </label>
+          <label>
+            <input type="checkbox" name="vina-del-anio" value="vina-del-anio">
+            VINA DEL ANO / WINERY OF THE YEAR </label>
+        </div>
+      </div>
+		<!-- FILTROS PREMIOS PUNTAJES -->
+		
+		<!-- BOTONES APLICAR Y LNIMPIAR FILTROS -->
+      <div class="cont-btn-aplicar-filtros">
+        <input data-loading="false" type="submit" value="Aplicar filtro" class="footer__btn--search" id="filter_btn">
+        <input type="reset" value="Limpiar filtros" class="footer__btn--clear" id="reset_form">
+      </div>
+		<!-- BOTONES APLICAR Y LNIMPIAR FILTROS -->
+		
+    </form>
+  </div>
+	<!-- COLUMNA IZQUIERDA DE FILTROS -->
+	
+	
+  <!-- COLUMNAS DERECHA DE CALUGAS VINOS -->
+	
+	
+  <div id="columna-reconocimientos">
+	  
+	  <!-- SECCION BUSCAR -->
+    <form action="" >
+      <input name="buscar" type="text" placeholder="buscar...">
+      <input name="submit" type="submit" value="Buscar">
+		
+		<!-- SECCION FILTROS APLICADOS -->
+	<div class="cont-filtros-aplicados">
+      <h3>Filtros Aplicados:</h3>
+      <div class="filtro-elegidos"><span>Decadenter Magazine</span><span>Robert Parker</span><span>Descorchados</span><span>Decadenter Magazine</span><span>Robert Parker</span><span>Descorchados</span>
+	  </div>
+      <a href="#" id="limpiar_filtros">Limpiar filtros</a>
+	</div>
+		<!-- SECCION FILTROS APLICADOS -->
+    </form>
+	  <!-- SECCION BUSCAR -->
+	  
+	 <!-- CALUGAS VINOS -->
+    <div class="cont-calugas-vinos">
+      <div class="caluga-vino"> <img src="image/Barranco-Viognier.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+      <div class="caluga-vino"> <img src="image/Dom.png" alt="barranco">
+        <h3> DOM </h3>
+        <p class="info-variedad"> CABERNET SAUVIGNON </p>
+        <p class="info-cosecha"> 2018 </p>
+        <p class="info-publicacion"> Mesa de Cata - La Cav 
+ </p>
+        <p class="info-premio-puntaje">95 <i>pts.</i></p>
+      </div>
+      <div class="caluga-vino"> <img src="image/Micas-Carmenere.png" alt="barranco">
+        <h3> Micas </h3>
+        <p class="info-variedad"> CARMENERE </p>
+        <p class="info-cosecha"> 2015 </p>
+        <p class="info-publicacion"> Descorchados </p>
+        <p class="info-premio-puntaje">92 <i>pts.</i></p>
+      </div>
+	  <div class="caluga-vino"> <img src="image/Payen.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Pedregoso-GR-cabernet-sauvignon.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Pedregoso-GR-chardonnay.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Pedregoso-GR-rose-pinot-noir.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Roca-Madre.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Talinay_Caliza_Chardonnay.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Talinay-Chardonnay.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Talinay-Litico-Malbec.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Talinay-Pai-Pinot-Noir.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Talud-Cabernet-Sauvignon.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Tatie-Brut.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Tatie-Rose.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Tranversal-Mezcla-de-tintos.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Vetas-Blancas-Syrah.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+		<div class="caluga-vino"> <img src="image/Vetas-Blancas-Syrah.png" alt="barranco">
+        <h3> BARRANCO </h3>
+        <p class="info-variedad"> VIOGNIER </p>
+        <p class="info-cosecha"> 2020 </p>
+        <p class="info-publicacion"> Robert Parker </p>
+        <p class="info-premio-puntaje">93 <i>pts.</i></p>
+      </div>
+    </div>
+	  <!-- CALUGAS VINOS -->
+	  
+	  <!-- PAGINACION -->
+	  <section class="paginacion">
+			<ul>
+				<li><a href="#" class="active">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+		</section>
+	  <!-- PAGINACION -->
+  </div>
+	<!-- COLUMNAS DERECHA DE CALUGAS VINOS -->
+  
+</div>
+</body>
+</html>
